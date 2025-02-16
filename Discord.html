@@ -1,0 +1,139 @@
+<title>Serveur Discord - Rejoins la Communauté !</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    body {
+        background: linear-gradient(135deg, #23272a, #1a1d21);
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .home-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 15px 30px;
+        background: linear-gradient(135deg, #7289da, #5865f2);
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .home-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 15px rgba(114, 137, 218, 0.8);
+    }
+    
+    .container {
+        max-width: 900px;
+        padding: 30px;
+        border-radius: 15px;
+        background: rgba(35, 39, 42, 0.95);
+        box-shadow: 0px 0px 30px rgba(114, 137, 218, 0.9);
+        animation: fadeIn 1.5s ease-in-out;
+        position: relative;
+        z-index: 2;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        color: #7289da;
+        text-shadow: 0px 0px 15px #7289da;
+        animation: glow 1.5s infinite alternate;
+    }
+    
+    @keyframes glow {
+        from { text-shadow: 0px 0px 15px #7289da; }
+        to { text-shadow: 0px 0px 25px #99aab5; }
+    }
+    
+    .discord-info {
+        margin-top: 30px;
+        font-size: 1.3rem;
+    }
+    
+    .join-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 18px 40px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(45deg, #5865f2, #4752c4);
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .join-btn:hover {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 20px #5865f2;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .background-animation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url('https://source.unsplash.com/1600x900/?galaxy,stars') center/cover;
+        opacity: 0.2;
+        z-index: 1;
+        animation: pulse 5s infinite alternate;
+    }
+    
+    @keyframes pulse {
+        from { opacity: 0.2; }
+        to { opacity: 0.4; }
+    }
+</style>
+</head>
+<body>
+<a href="./accueil.html" class="home-button">🏠 Retour à l'accueil</a>
+<div class="background-animation"></div>
+<div class="container">
+    <h1>🔥 Rejoins Notre Discord 🔥</h1>
+    <div class="discord-info">
+        <p>Viens échanger avec la communauté, participer à des évènements exclusifs et t'amuser avec nous !</p>
+        <p>💬 Discussions - 🎮 Jeux - 🎁 Giveaways - 🤖 Bots Fun</p>
+        <button class="join-btn" onclick="window.location.href='https://discord.gg/J2jEMPWA2G'">🚀 Rejoindre Maintenant !</button>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+<link rel="stylesheet" href="./responsive.css">

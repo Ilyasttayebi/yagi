@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Twitch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0e0e10, #1a1a1d);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #9147ff, #bf00ff);
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .home-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(145, 71, 255, 0.8);
+        }
+
+        .container {
+            width: 600px;
+            padding: 30px;
+            background: rgba(24, 24, 27, 0.9);
+            box-shadow: 0px 0px 20px rgba(145, 71, 255, 0.5);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: 85vh;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #9147ff;
+            text-shadow: 0px 0px 15px #9147ff;
+            animation: glow 2s infinite alternate;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0px 0px 10px #9147ff; }
+            50% { text-shadow: 0px 0px 20px #bf00ff, 0px 0px 30px #bf00ff; }
+            100% { text-shadow: 0px 0px 10px #9147ff; }
+        }
+
+        .day {
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(145deg, #18181b, #1f1f23);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            width: 100%;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .day:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(145, 71, 255, 0.8);
+        }
+
+        .time {
+            font-weight: bold;
+            color: #ff8800;
+            text-shadow: 0px 0px 10px #ff8800;
+            font-size: 1.5rem;
+            display: block;
+        }
+
+        /* Barre de défilement violette à droite */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(24, 24, 27, 0.5);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #9147ff;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #bf00ff;
+        }
+    </style>
+</head>
+<body>
+    <a href="./accueil.html" class="home-button">🏠 Retour à l'accueil</a>
+    <div class="container">
+        <h1>Planning Twitch 📅</h1>
+        <div class="planning">
+            <div class="day"> <span class="time">Lundi - 20h</span> Gameplay & Chill 🎮</div>
+            <div class="day"> <span class="time">Mardi - 21h</span> Viewer Games 🏆</div>
+            <div class="day"> <span class="time">Mercredi - 19h</span> Just Chatting 💬</div>
+            <div class="day"> <span class="time">Jeudi - 22h</span> Soirée Horreur 👻</div>
+            <div class="day"> <span class="time">Vendredi - 20h</span> Speedrun Night ⚡</div>
+            <div class="day"> <span class="time">Samedi - 18h</span> Tournoi Follower 🏅</div>
+            <div class="day"> <span class="time">Dimanche - OFF</span> Repos 💤</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<link rel="stylesheet" href="./responsive.css">
